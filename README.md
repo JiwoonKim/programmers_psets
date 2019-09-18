@@ -1,7 +1,7 @@
-# programmers_psets
+# programmers_psets :ocean:
 solutions to programmers problem sets
 
-## 코딩테스트 고득점 Kit
+### :unlock: 코딩테스트 고득점 Kit 
 - [ ] 1. 해시 (높음; 4 문제)
 - [ ] 2. 스택/큐 (보통 6 문제)
 - [ ] 3. 힙 (높음; 4 문제)
@@ -13,7 +13,7 @@ solutions to programmers problem sets
 - [ ] 9. 이분탐색 (낮음; 3문제)
 - [ ] 10. 그래프 (낮음; 4문제)
 
-## 카카오 블라인드 코딩테스트 기출
+### :chocolate_bar: 카카오 블라인드 코딩테스트 기출
 - [ ] 카카오 블라인드 코딩테스트 1차 2019
 - [ ] 카카오 블라인드 코딩테스트 1차 2018
 - [ ] 카카오 블라인드 코딩테스트 1차 2017
@@ -21,4 +21,4 @@ solutions to programmers problem sets
 ## :wrench: Useful Mechanisms To Remember
 > list of useful mechanisms (functions) to remember
 
-### 1. Arrays
+### 1. Hash
