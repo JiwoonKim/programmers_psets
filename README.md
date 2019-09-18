@@ -12,3 +12,8 @@ solutions to programmers problem sets
 - [ ] 8. 깊이/너비 우선 탐색 (높음; 4 문제)
 - [ ] 9. 이분탐색 (낮음; 3문제)
 - [ ] 10. 그래프 (낮음; 4문제)
+
+## :wrench: Useful Mechanisms To Remember
+> list of useful mechanisms (functions) to remember
+
+### 1. Arrays
