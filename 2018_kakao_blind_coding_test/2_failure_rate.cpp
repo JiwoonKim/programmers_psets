@@ -23,6 +23,7 @@ vector<float> failures(502);
 
 vector<int> solution(int N, vector<int> stages) {
     vector<int> answer;
+    
     // 각 스테이지마다 사람 수 기록
     vector<int> ppl_count(N + 2, 0);
     for (int stage : stages) {
@@ -43,7 +44,6 @@ vector<int> solution(int N, vector<int> stages) {
     }
     
     // 스테이지 실패율을 바탕으로 내림차순으로 정렬하기
-    
     for (int i = 1; i <= N; i++) {
         answer.push_back(i);
     }
@@ -52,7 +52,7 @@ vector<int> solution(int N, vector<int> stages) {
 }
 
 /**
- *  도움 함수:
+ *  도움 함수: 내림차순 정렬
  */
 bool cmp(const int& u, const int& v) {
     if (failures[u] == failures[v]) {
