@@ -22,3 +22,5 @@ solutions to programmers problem sets
 > list of useful mechanisms (functions) to remember
 
 ### 1. Hash
+1. 중복된 값은 `unordered_multiset`을 사용하여 기록 (1-1. 완주하지 못한 선수)
+    - 단, 삭제 시에 모든 중복된 값을 삭제하지 않고 하나만 삭제하기 위해서는 `iterator`를 통해 삭제해야만 함

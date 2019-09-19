@@ -7,6 +7,9 @@
  * 
  *  * Solution
  * 
+ *    (1) use hash table: O(n) time, O(n) extra space
+ *        -> 
+ * 
  * 
  *  ** What I learned
  * 
