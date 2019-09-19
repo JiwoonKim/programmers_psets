@@ -3,9 +3,7 @@
  *      - 이진트리를 구성하는 노드들의 좌표가 담긴 배열 nodeinfo가 매개변수로 주어질 때, 
  *        노드들로 구성된 이진트리를 전위 순회, 후위 순회한 결과를 2차원 배열에 순서대로 담아 반환하기
  *        (각 노드는 nodeInfo에 주어진 순서대로 번호를 가지며, nodeInfo에는 (x, y) 좌표가 기록되어있다)
- *      - Reference: https://programmers.co.kr/learn/courses/30/lessons/42891
- * 
- *      ** 효율성 테스트에 부분 점수가 있는 문제!!
+ *      - Reference: https://programmers.co.kr/learn/courses/30/lessons/42892
  * 
  * 
  *  * Solution
