@@ -1,8 +1,8 @@
 /**
- *  [#1] 오픈채팅방
- *       - 명령어(유저 들어옴, 나감, 닉네임 변경)들의 기록이 주어졌을 때,
- *         최종적으로 변경된 닉네임들로 표시된 메세지 기록을 반환하기
- *       - Reference: https://programmers.co.kr/learn/courses/30/lessons/42888
+ *  [1] 오픈채팅방
+ *      - 명령어(유저 들어옴, 나감, 닉네임 변경)들의 기록이 주어졌을 때,
+ *        최종적으로 변경된 닉네임들로 표시된 메세지 기록을 반환하기
+ *      - Reference: https://programmers.co.kr/learn/courses/30/lessons/42888
  * 
  * 
  *  * Solution
