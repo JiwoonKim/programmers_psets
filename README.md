@@ -4,7 +4,7 @@ solutions to programmers problem sets
 ### :unlock: 코딩테스트 고득점 Kit 
 - [ ] 1. 해시 (높음; 4 문제)
 - [ ] 2. 스택/큐 (보통 6 문제)
-- [ ] 3. 힙 (높음; 4 문제)
+- [ ] 3. 힙 (보통; 4 문제)
 - [ ] 4. 정렬 (높음; 3 문제)
 - [ ] 5. 완전탐색 (높음; 4 문제)
 - [ ] 6. 그리디 (낮음; 7 문제)
@@ -21,6 +21,15 @@ solutions to programmers problem sets
 ## :wrench: Useful Mechanisms To Remember
 > list of useful mechanisms (functions) to remember
 
-### 1. Hash
+### 1. 해시
 1. 중복된 값은 `unordered_multiset`을 사용하여 기록 (1-1. 완주하지 못한 선수)
     - 단, 삭제 시에 모든 중복된 값을 삭제하지 않고 하나만 삭제하기 위해서는 `iterator`를 통해 삭제해야만 함
+
+### 2. 스택/큐
+### 3. 힙
+
+### 4. 정렬
+
+### 5. 완전탐색
+
+### 8. 깊이/너비 우선 탐색

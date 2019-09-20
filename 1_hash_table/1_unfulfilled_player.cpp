@@ -33,7 +33,6 @@
  *          -> s.erase(it)
  * 
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 
