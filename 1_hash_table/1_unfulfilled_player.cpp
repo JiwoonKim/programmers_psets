@@ -1,10 +1,11 @@
 /**
  *  [문제] 완주하지 못한 선수
- *         : 마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 
- *           완주하지 못한 선수의 이름을 찾기
- *           (Reference: https://programmers.co.kr/learn/courses/30/lessons/42576)
+ *  : 마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 
+ *    완주하지 못한 선수의 이름을 찾기
+ *    (Reference: https://programmers.co.kr/learn/courses/30/lessons/42576)
  * 
- *  * Solution
+ * 
+ *  [해결 방법]
  * 
  *    (1) 해시 테이블 사용: O(n) time, O(n) extra space
  *        -> 선수 모두 해시 테이블에 저장 후, 완주 선수 제외시키기
@@ -15,14 +16,14 @@
  *              -> 단, 삭제 시에는 find로 이터레이터를 찾은 후, 이터레이터로 삭제해야 함!
  * 
  *    (2) 정렬 후 비교: O(n logn) time, O(1) extra space
- *        -> sort participant vector and completed vector in ascending order
- *        -> compare the two vectors' elements one-by-one in order
- *           -> if do not match, the participant is the uncompleted player
- *        -> if all match until end of completion vector, 
- *           -> last participant is the uncompleted player
+ *        -> 오름차순으로 participant과 completion 배열 정렬
+ *        -> 순서대로 participant[i] == completion[i] 비교
+ *           -> 같지 않을 경우, 해당 participant가 완주하지 못한 선수이다
+ *        -> 모두 같을 경우,
+ *           -> 지지막 남은 participant가 완주하지 못한 선수이다
  * 
  * 
- *  ** What I learned
+ *  [What I learned]
  * 
  *     ** unordered_multiset 사용하는 방법
  *        - 라이브러리: #include <unordered_set>
@@ -80,7 +81,7 @@ string solution(vector<string> participant, vector<string> completion) {
 }
 
 /**
- *  (2) sort and compare
+ *  (2) 정렬 후 비교
  */
 string solution(vector<string> participant, vector<string> completion) {
     // 선수 배열과 완주 선수 배열을 정렬

@@ -1,17 +1,18 @@
 /**
  *  [1] 오픈채팅방
- *      - 채팅방에 들어오고 나가거나, 닉네임을 변경한 기록이 담긴 문자열 배열 record가 주어질 때, 
+ *      : 채팅방에 들어오고 나가거나, 닉네임을 변경한 기록이 담긴 문자열 배열 record가 주어질 때, 
  *        최종적으로 변경된 닉네임이 반영된 채팅방의 들어옴/나감 기록을 반환하기
  *      - Reference: https://programmers.co.kr/learn/courses/30/lessons/42888
  * 
  * 
- *  * Solution
+ *  [해결 방법]
  * 
- *    (1) use hash table: O(n) time, O(n) extra space
- *        -> 
+ *    (1) 해시 테이블 사용: O(n) time, O(n) extra space
+ *        -> unordered_map을 이용하여 각 아이디마다 닉네임 저장 및 변경
+ *        -> 최종적으로 변경된 각 아이디의 닉네임을 들어감, 나감 메세지에 맞게 변환하여 반환
  * 
  * 
- *  ** What I learned
+ *  [What I learned]
  * 
  * 
 */
