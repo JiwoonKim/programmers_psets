@@ -22,9 +22,16 @@ solutions to programmers problem sets
 > list of useful mechanisms (functions) to remember
 
 ### 1. 해시
-1. 중복된 값은 `unordered_multiset`을 사용하여 기록 (1-1. 완주하지 못한 선수)
-    - 단, 삭제 시에 모든 중복된 값을 삭제하지 않고 하나만 삭제하기 위해서는 `iterator`를 통해 삭제해야만 함
-2. 정렬 후 비교 (1-1. 완주하지 못한 선수 & 1-2. 전화번호 목록)
+1. use `unordered_multiset` to insert and erase duplicate keys (1-1. 완주하지 못한 선수)
+    - use `iterator` to erase only one and not all duplicate keys
+    - use `unordered_map` instead if need to count number of duplicates: (key, count)
+        - bcuz duplicate keys are iterated separately in multiset
+2. `sort and compare` to check if prefix (1-1. 완주하지 못한 선수 & 1-2. 전화번호 목록 :star:)
+    - 
+3. use `counting principle` to __count__ all the possible combinations (1-3. 위장 :dizzy:)
+    - add `not-chosen-case` to each categories and multiply all categories
+    - if there are certain instances not allowed, simpy calculate number of those and subtract from total counts
+    - use `backtracking` instead, to actually create all the possible combination representations
 
 ### 2. 스택/큐
 ### 3. 힙

@@ -28,6 +28,7 @@ vector<string> solution(vector<string> record) {
     // 각 아이디의 최종 닉네임을 저장
     unordered_map<string, string> id_nicknames;
     for (string message : record) {
+        // 들어옴 또는 닉네임 변경 메세지에서 아이디와 닉네임 저장
         if (message[0] == 'E' || message[0] == 'C') {
             vector<string> words = parseMessage(message);
             id_nicknames[words[1]] = words[2];
@@ -37,11 +38,13 @@ vector<string> solution(vector<string> record) {
     // 닉네임 바탕으로 메세지 변환하기
     vector<string> answer;
     for (string message : record) {
+        // 들어옴 메세지에 최종 닉네임 대입하여 저장
         if (message[0] == 'E') {
             vector<string> words = parseMessage(message);
             string finalMessage = id_nicknames[words[1]] + "님이 들어왔습니다.";
             answer.push_back(finalMessage);
         }
+        // 나감 메세지에 최종 닉네임 대입하여 저장
         if (message[0] == 'L') {
             vector<string> words = parseMessage(message);
             string finalMessage = id_nicknames[words[1]] + "님이 나갔습니다.";
