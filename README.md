@@ -28,7 +28,7 @@ solutions to programmers problem sets
         - bcuz duplicate keys are iterated separately in multiset
 2. `sort and compare` to check if prefix (1-1. 완주하지 못한 선수 & 1-2. 전화번호 목록 :star:)
     - 
-3. use `counting principle` to __count__ all the possible combinations (1-3. 위장 :dizzy:)
+3. use `counting principle` to __count__ all the possible combinations (1-3. 위장 :rocket:)
     - add `not-chosen-case` to each categories and multiply all categories
     - if there are certain instances not allowed, simpy calculate number of those and subtract from total counts
     - use `backtracking` instead, to actually create all the possible combination representations

@@ -80,3 +80,29 @@ void combine(vector<int> prefix, int start, int end) {
 /**
  *  
  */
+int solution(vector<vector<string>> clothes) {
+
+    // 카테고리별로 옷 개수 세기: (카테고리, 개수)
+    unordered_map<string, int> category_count;
+    for (auto pair : clothes) {
+        string category = pair[1];
+        if (category_count.count(category) == 0) {
+            category_count[category] = 1;
+        } else {
+            category_count[category]++;
+        }
+    }
+
+    /* 서로 다른 옷의 조합의 수 계산하기
+       -> 각 카테고리의 (의상 수 + 1)을 곱해나가기
+          : 각 의상 입는 경우 + 의상종류 자체를 입지 않는 경우
+    */
+    int answer = 1;
+    for (const auto& kv : category_count) {
+        answer *= (kv.second + 1);
+    }
+    
+    // 의상 아무것도 입지 않는 경우 (벌거벗는 경우) 제외하기
+    answer = answer - 1;
+    return answer;
+}
