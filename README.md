@@ -37,6 +37,8 @@ solutions to programmers problem sets
 ### 3. 힙
 
 ### 4. 정렬
+1. use `sort(v.begin() + i - 1, v.begin() + j)` to sort range (i, j) (4-1. kth number)
+    - make sure to __copy array first__ and then use sort if need to preserve original array
 
 ### 5. 완전탐색
 
